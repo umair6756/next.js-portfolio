@@ -29,3 +29,9 @@ body {
 }
 
 
+.clip-path-ribbon {
+  clip-path: polygon(0 0, 65% 0, 100% 50%, 65% 100%, 0 100%);
+}
+
+
+

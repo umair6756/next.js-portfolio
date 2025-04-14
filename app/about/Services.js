@@ -1,46 +1,46 @@
 'use client'
 
-import { FaCss3Alt, FaWordpressSimple, FaRocket } from 'react-icons/fa';
+import { FaCss3Alt, FaWordpressSimple, FaRocket, FaGithub, FaDocker, FaLinux, FaShoppingCart } from 'react-icons/fa';
 import { MdOutlineDesignServices } from 'react-icons/md';
 
-import { TbArrowsDiagonal } from 'react-icons/tb';
+import { TbArrowsDiagonal, TbLayersIntersect } from 'react-icons/tb';
 
 const services = [
   {
     icon: <FaCss3Alt size={40} className="text-green-400" />,
-    title: 'Design Trends',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    title: 'Web Design',
+    desc: 'Designing clean, modern, and user-friendly website interfaces that enhance user experience.',
   },
   {
-    icon: <MdOutlineDesignServices size={40} className="text-green-400" />,
-    title: 'PSD Design',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    icon: <TbLayersIntersect size={40} className="text-green-400" />,
+    title: 'Full-Stack',
+    desc: 'Building complete web applications, including both frontend and backend systems.',
   },
   {
-    // icon: <IoMdSupport size={40} className="text-green-400" />,
-    title: 'Customer Support',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    icon: <FaShoppingCart size={40} className="text-green-400" />,
+    title: 'E-commerce Solutions',
+    desc: 'Providing end-to-end e-commerce solutions for seamless online shopping experiences.',
   },
   {
-    icon: <FaWordpressSimple size={40} className="text-green-400" />,
-    title: 'Web Development',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    icon: <FaGithub size={40} className="text-green-400" />,
+    title: 'CI/CD',
+    desc: 'Automatically building, testing, and deploying software.',
   },
   {
-    icon: <TbArrowsDiagonal size={40} className="text-green-400" />,
-    title: 'Fully Responsive',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    icon: <FaDocker size={40} className="text-green-400" />,
+    title: 'Docker Services',
+    desc: 'Managing scalable containerized infrastructure with Docker.',
   },
   {
-    icon: <FaRocket size={40} className="text-green-400" />,
-    title: 'Branding',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    icon: <FaLinux size={40} className="text-green-400" />,
+    title: 'Linux Admin',
+    desc: 'Maintaining and securing Linux servers for optimal performance and reliability.',
   },
 ];
 
 const Services = () => {
   return (
-    <section className="text-white py-16 px-6">
+    <section className="bg-[#212529] text-white py-16 px-6">
       <div className="max-w-6xl mx-auto ">
         <p className="text-gray-400 uppercase">Services i offer to my clients</p>
         <h2 className="text-4xl font-bold mb-10 ">My Services</h2>

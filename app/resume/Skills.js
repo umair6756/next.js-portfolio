@@ -3,16 +3,17 @@ import React from "react";
 
 const skills = [
   { name: "HTML/CSS", value: 95 },
-  { name: "Web Design", value: 80 },
   { name: "JavaScript", value: 90 },
-  { name: "React JS", value: 90 },
-  { name: "Express.js", value: 95 },
-  { name: "TypeScript", value: 80 },
+  { name: "React JS", value: 70 },
+
+  { name: "Node JS", value: 60 },
+  { name: "Devops", value: 30 },
+  { name: "Linux", value: 85 },
 ];
 
 const Skills = () => {
   return (
-    <section className="text-white py-16 px-4 sm:px-8 md:px-16">
+    <section className="text-white py-16 px-4 sm:px-8 md:px-23">
       <p className="text-gray-400 text-sm mb-2">My level of knowledge in some tools</p>
       <h2 className="text-3xl sm:text-4xl font-bold mb-10">My Skills</h2>
 
