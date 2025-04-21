@@ -10,7 +10,7 @@ import Link from 'next/link';
 const projects = [
   { id: 1, category: 'HTML/CSS', img: '/images/bmi.jpg', label: 'BMI Calculator',  github: 'https://github.com/umair6756/BMI.git' },
   { id: 2, category: 'HTML/CSS', img: '/images/notes.jpg', label: 'Notes app', github: 'https://github.com/umair6756/Notes-app.git' },
-  { id: 3, category: 'HTML/CSS', img: '/images/age.jpg', label: 'Age calculator', github: 'https://github.com/umair6756/Age-Calculator.git' },
+  { id: 3, category: 'HTML/CSS', img: '/images/age.png', label: 'Age calculator', github: 'https://github.com/umair6756/Age-Calculator.git' },
   { id: 4, category: 'React', img: '/images/e-commerce.jpg', label: 'E-commerce store', github: 'https://github.com/umair6756/MERN-Stack-Ecommerce.git' },
   { id: 5, category: 'React', img: '/images/expense.jpg', label: 'Expense tracker', github: 'https://github.com/umair6756/MERN-Expense-tracker.git' },
   { id: 6, category: 'Photos', img: '/img/item-6.jpg', label: 'Pouch Design', github: '' },

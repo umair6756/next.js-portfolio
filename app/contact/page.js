@@ -5,8 +5,35 @@ import { FaUser, FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import HeadingAnimation from "../HeadingAnimation";
 import CloseButton from "../CloseButton";
 
+import { useState } from "react";
 export default function Contact() {
+
+  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
+
+  // 👇 Common onChange handler
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prevForm) => ({
+      ...prevForm,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    });
+    const data = await res.json();
+    alert(data.message);
+  };
+
+
   return (
+
+
     <>
     <div className="mt-20">
          <HeadingAnimation heading="Get in Touch" description="Feel free to contact me anytimes"/>
@@ -17,14 +44,16 @@ export default function Contact() {
       {/* Message Form */}
       <div className="w-full md:w-[60%]">
         <h2 className="text-2xl md:text-3xl font-bold mb-6">Message Me</h2>
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={handleSubmit}>
           {/* Name and Email */}
           <div className="flex flex-col md:flex-row gap-4">
             {/* Name */}
             <div className="relative group w-full md:w-1/2">
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
+                onChange={handleChange}
                 className="w-full bg-[#111] text-white px-4 py-3 focus:outline-none"
               />
               <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-green-500 transition-all duration-300 group-focus-within:w-full"></span>
@@ -34,7 +63,9 @@ export default function Contact() {
             <div className="relative group w-full md:w-1/2">
               <input
                 type="email"
+                name="email"
                 placeholder="Your Email"
+                onChange={handleChange}
                 className="w-full bg-[#111] text-white px-4 py-3 focus:outline-none"
               />
               <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-green-500 transition-all duration-300 group-focus-within:w-full"></span>
@@ -45,7 +76,9 @@ export default function Contact() {
           <div className="relative group w-full">
             <input
               type="text"
+              name="subject"
               placeholder="Subject"
+              onChange={handleChange}
               className="w-full bg-[#111] text-white px-4 py-3 focus:outline-none"
             />
             <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-green-500 transition-all duration-300 group-focus-within:w-full"></span>
@@ -54,7 +87,9 @@ export default function Contact() {
           {/* Message */}
           <div className="relative group w-full">
             <textarea
+              name="message"
               placeholder="Message"
+              onChange={handleChange}
               className="w-full bg-[#111] text-white px-4 py-3 h-32 focus:outline-none resize-none"
             ></textarea>
             <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-green-500 transition-all duration-300 group-focus-within:w-full"></span>

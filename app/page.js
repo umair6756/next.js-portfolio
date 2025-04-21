@@ -45,18 +45,18 @@ export default function Page() {
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-8 text-white font-medium">
-        <Link href="/about">
+        <Link href="/about" prefetch={true}>
         <li className="hover:text-green-500 cursor-pointer">About</li>
         </Link>
-        <Link href="/resume">
+        <Link href="/resume" prefetch={true}>
         <li className="hover:text-green-500 cursor-pointer">Resume</li>
         </Link>
 
-        <Link href="/portfolio">
+        <Link href="/portfolio" prefetch={true}>
         <li className="hover:text-green-500 cursor-pointer">Portfolio</li>
         </Link>
 
-        <Link href="/contact">
+        <Link href="/contact" prefetch={true}>
         <li className="hover:text-green-500 cursor-pointer">Contact</li>
         </Link>
 
@@ -74,17 +74,17 @@ export default function Page() {
         }`}
       >
         <ul className="flex flex-col items-center gap-4 py-4 bg-[#222] text-white font-medium">
-          <Link href="/about">
+          <Link href="/about" prefetch={true}>
           <li className="hover:text-green-500 cursor-pointer">About</li>
           
           </Link>
-          <Link href="/resume">
+          <Link href="/resume" prefetch={true}>
           <li className="hover:text-green-500 cursor-pointer">Resume</li>
           </Link>
-          <Link href="/portfolio">
+          <Link href="/portfolio" prefetch={true}>
           <li className="hover:text-green-500 cursor-pointer">Portfolio</li>
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" prefetch={true}>
           <li className="hover:text-green-500 cursor-pointer">Contact</li>
           </Link>
         </ul>
