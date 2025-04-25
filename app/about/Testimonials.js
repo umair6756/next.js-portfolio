@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import Image from 'next/image'
+
 const allTestimonials = [
   {
     name: "Julia Sakura",
@@ -59,9 +61,11 @@ export default function Testimonials() {
                 {/* Client Info */}
                 <div className="flex gap-4 mb-0">
                   <div className="flex gap-4 mt-8">
-                    <img
+                    <Image
                       src={item.image}
                       alt={item.name}
+                      height={500}
+                      width={500}
                       className="w-14 h-14 rounded-full object-cover border-2 border-green-500"
                     />
                     <div className="flex flex-col">

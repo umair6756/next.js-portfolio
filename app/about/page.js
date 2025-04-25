@@ -14,6 +14,8 @@ import PricingPlans from "./PricingPlans";
 import HeadingAnimation from "../HeadingAnimation";
 import CloseButton from "../CloseButton";
 
+
+
 export default function Page() {
   return (
     <>
@@ -77,9 +79,12 @@ export default function Page() {
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-9 mt-6 text-lg">
               {/* CV Button */}
               <div>
-                <button className="bg-green-500 hover:bg-green-600 text-white py-2 px-5 rounded-full">
-                  Download CV
-                </button>
+              <a href="https://drive.google.com/file/d/1VdtZqqbnlda4C9FMD03IPKkWTnHgE_zT/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <button className="bg-green-500 hover:bg-green-600 text-white py-2 px-5 rounded-full cursor-pointer">
+          Download CV
+        </button>
+      </a>
+ 
               </div>
 
               {/* Divider (Hidden on xs) */}
