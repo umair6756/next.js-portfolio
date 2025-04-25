@@ -1,9 +1,9 @@
 'use client'
 
-import { FaCss3Alt, FaWordpressSimple, FaRocket, FaGithub, FaDocker, FaLinux, FaShoppingCart } from 'react-icons/fa';
-import { MdOutlineDesignServices } from 'react-icons/md';
+import { FaCss3Alt, FaGithub, FaDocker, FaLinux, FaShoppingCart } from 'react-icons/fa';
 
-import { TbArrowsDiagonal, TbLayersIntersect } from 'react-icons/tb';
+
+import {  TbLayersIntersect } from 'react-icons/tb';
 
 const services = [
   {
